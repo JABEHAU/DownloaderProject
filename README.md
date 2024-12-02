@@ -15,10 +15,11 @@
 ---
 ## Resumen
 
-Este proyecto es un descargador de música de YouTube que permite a los usuarios obtener canciones de manera rápida y sencilla. A través de una página web intuitiva, los usuarios pueden ingresar enlaces de videos y descargar el audio en el formato deseado. El sistema está diseñado para ofrecer dos métodos de descarga: uno secuencial y otro en paralelo, brindando flexibilidad y eficiencia según las necesidades del usuario.
-Para su desarrollo, se utilizaron diversas tecnologías. Django gestiona el servidor y las solicitudes de descarga, mientras que Bootstrap se empleó para crear una interfaz atractiva y fácil de usar. La lógica del programa fue implementada en Python, utilizando herramientas como yt-dlp para descargar y convertir los videos en archivos de audio. Además, se desarrollaron dos versiones del programa:
-La rama master, que ejecuta las descargas en paralelo utilizando librerías como threading y multiprocessing, optimizando el tiempo y los recursos.
-La rama características, programación secuencial, que realiza las descargas de manera secuencial, procesando un archivo a la vez.
+Este proyecto es un descargador de música de YouTube que permite a los usuarios obtener canciones de manera rápida y sencilla. A través de una página web intuitiva, los usuarios pueden ingresar enlaces de videos y descargar el audio en formato mp3.
+El sistema está diseñado para ofrecer la descarga de músicas en paralelo, brindando eficiencia para el usuario.
+Para su desarrollo, se utilizaron diversas tecnologías. Django gestiona el servidor y las solicitudes de descarga, mientras que Bootstrap se empleó para crear una interfaz atractiva y fácil de usar. La lógica del programa fue implementada en Python, utilizando librerías como yt-dlp para descargar y convertir los videos en archivos de audio. Además, se desarrollaron dos versiones del programa:
+La rama features/parallel_programming, que ejecuta las descargas de manera concurrente, optimizando el tiempo y los recursos.
+La rama features/sequential_programming, que realiza las descargas de manera secuencial, procesando un archivo a la vez.
 Estas dos versiones permiten al usuario elegir entre eficiencia máxima o un enfoque más sencillo, según sus necesidades.
 
 ---
@@ -48,4 +49,5 @@ Lanzar el proyecto
 
 ---
 ## Resultados
+A continuación se muestran los tiempos que tardó en ejecutarse el programa según el número de descargas, tanto de forma secuencial como de forma concurrente:
 ![image](https://github.com/user-attachments/assets/56ba7575-41c7-4f81-ab96-62ace5aaf4eb)
