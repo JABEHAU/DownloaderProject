@@ -50,4 +50,5 @@ Lanzar el proyecto
 ---
 ## Resultados
 A continuación se muestran los tiempos que tardó en ejecutarse el programa según el número de descargas, tanto de forma secuencial como de forma concurrente:
+
 ![image](https://github.com/user-attachments/assets/56ba7575-41c7-4f81-ab96-62ace5aaf4eb)
